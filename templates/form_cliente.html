@@ -1,0 +1,16 @@
+<form class="c-form" action = "{{url_for('client.inserir_cliente')}}"
+      method="POST"  c-append="#lista-clientes"> <!--Com a lib podemos informar onde queremos fazer um append-->     
+      <!--A label-->             
+      <!--A lib faz um interceptção o formulário e vai obter os dados do cliente-->
+     
+    <div class="mb-3">
+      <label class="form-label">Nome</label>
+      <input type="text" class="form-control" name = "nome">
+    </div>
+    <div class="mb-3">
+        <label id = "label-target"class="form-label">Email</label> 
+        <input type="text" class="form-control" name = "email">
+      </div>
+
+    <button type="submit" class="btn btn-primary">Adicionar cliente</button>
+</form>

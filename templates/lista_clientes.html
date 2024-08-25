@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Email</th>
+        <th scope="col">Ações</th>
+      </tr>
+    </thead>
+    <tbody id="lista-clientes"> <!--O append será feito aqui -->
+
+    {%for cliente in clientes%} <!--Looping for-->
+        {%include 'item_cliente.html'%} <!--Atrelando item_cliente ao looping-->
+    {% endfor %}
+    </tbody>
+  </table>
